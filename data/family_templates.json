@@ -1,0 +1,134 @@
+{
+  "templates": [
+    {
+      "id": "classic_family_portrait",
+      "name": "经典全家福",
+      "prompt": "Classic family portrait, all family members standing in traditional arrangement, facing camera, formal attire, elegant pose",
+      "scene": "formal living room or studio with classic backdrop",
+      "atmosphere": "formal, elegant, traditional",
+      "person_count": "3-6",
+      "attire": "coordinated formal family attire: family members wearing formal or semi-formal clothing, suits, dresses, or elegant outfits that match in color palette or style"
+    },
+    {
+      "id": "casual_family_gathering",
+      "name": "温馨家庭聚会",
+      "prompt": "Casual family photo, relaxed postures, natural expressions, comfortable clothing, authentic family moment",
+      "scene": "cozy living room, family room, or comfortable home setting",
+      "atmosphere": "warm, relaxed, authentic",
+      "person_count": "3-6",
+      "attire": "coordinated casual family attire: family members wearing comfortable casual clothing, casual shirts, sweaters, or relaxed outfits that look natural and cozy together"
+    },
+    {
+      "id": "outdoor_family",
+      "name": "户外家庭照",
+      "prompt": "Family photo outdoors, natural setting, casual clothing, relaxed poses, natural sunlight",
+      "scene": "park, beach, garden, or backyard",
+      "atmosphere": "natural, fresh, relaxed",
+      "person_count": "3-6",
+      "attire": "outdoor-appropriate family attire: family members wearing clothing suitable for outdoor activities, casual wear, light jackets, or comfortable outdoor outfits"
+    },
+    {
+      "id": "multigenerational_family",
+      "name": "多代同堂",
+      "prompt": "Multigenerational family portrait with grandparents, parents, and children, warm family bonds visible",
+      "scene": "formal or semi-formal indoor setting",
+      "atmosphere": "warm, loving, traditional",
+      "person_count": "4-6",
+      "attire": "respectful multi-generational attire: formal or semi-formal clothing appropriate for all ages, traditional or classic styles that show respect for family traditions"
+    },
+    {
+      "id": "playful_family",
+      "name": "活泼家庭照",
+      "prompt": "Playful family photo, fun poses, laughing expressions, dynamic composition, family having fun together",
+      "scene": "playful setting like playground, beach, or home",
+      "atmosphere": "joyful, energetic, fun",
+      "person_count": "3-6",
+      "attire": "playful casual family attire: family members wearing colorful or fun casual clothing, comfortable activewear, or playful outfits that match the joyful mood"
+    },
+    {
+      "id": "seated_family_portrait",
+      "name": "坐姿全家福",
+      "prompt": "Family portrait with members seated on couch or chairs, comfortable and intimate arrangement",
+      "scene": "comfortable living room with nice furniture",
+      "atmosphere": "intimate, comfortable, warm",
+      "person_count": "3-6",
+      "attire": "comfortable family attire: family members wearing coordinated but comfortable clothing suitable for seating, soft fabrics, relaxed formal or smart casual outfits"
+    },
+    {
+      "id": "formal_studio_family",
+      "name": "专业摄影棚全家福",
+      "prompt": "Professional studio family portrait, perfect lighting, formal attire, professional photography quality",
+      "scene": "professional photography studio with professional backdrop",
+      "atmosphere": "professional, polished, elegant",
+      "person_count": "3-6",
+      "attire": "coordinated formal studio attire: family members wearing matching or complementary formal outfits, suits, dresses, or elegant studio photography attire"
+    },
+    {
+      "id": "holiday_family_photo",
+      "name": "节日家庭照",
+      "prompt": "Family photo for holidays or special occasions, festive atmosphere, seasonal decorations or attire",
+      "scene": "holiday decorated home or festive setting",
+      "atmosphere": "festive, celebratory, joyful",
+      "person_count": "3-6",
+      "attire": "festive holiday attire: family members wearing holiday-appropriate or festive clothing, seasonal colors, celebratory outfits that match the holiday theme"
+    }
+  ],
+  "arrangements": [
+    {
+      "id": "all_standing",
+      "name": "全员站立",
+      "prompt": "All family members standing together in a line or slight curve arrangement",
+      "max_people": 6
+    },
+    {
+      "id": "seated_with_standing",
+      "name": "坐站结合",
+      "prompt": "Some family members seated (usually older generations or parents), others standing behind or beside",
+      "max_people": 6
+    },
+    {
+      "id": "front_back_arrangement",
+      "name": "前后排列",
+      "prompt": "Family members arranged in two rows, some in front and some behind, all visible",
+      "max_people": 6
+    },
+    {
+      "id": "circular_arrangement",
+      "name": "半圆排列",
+      "prompt": "Family members arranged in a semi-circle or curve facing the camera",
+      "max_people": 6
+    }
+  ],
+  "backgrounds": [
+    {
+      "id": "formal_living_room",
+      "name": "正式客厅",
+      "prompt": "elegant formal living room with nice furniture, tasteful decor, warm professional lighting"
+    },
+    {
+      "id": "cozy_home_interior",
+      "name": "温馨家庭内景",
+      "prompt": "warm cozy home interior, comfortable furniture, personal family atmosphere"
+    },
+    {
+      "id": "professional_studio",
+      "name": "专业摄影棚",
+      "prompt": "professional photography studio with professional backdrop and lighting equipment"
+    },
+    {
+      "id": "outdoor_park",
+      "name": "户外公园",
+      "prompt": "beautiful outdoor park with trees, grass, and natural scenery"
+    },
+    {
+      "id": "beach_seaside",
+      "name": "海滩风景",
+      "prompt": "beautiful beach with ocean, sand, and natural seaside scenery"
+    },
+    {
+      "id": "garden_floral",
+      "name": "花园花卉",
+      "prompt": "beautiful garden with flowers, plants, and natural garden scenery"
+    }
+  ]
+}

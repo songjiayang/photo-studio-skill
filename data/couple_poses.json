@@ -1,0 +1,132 @@
+{
+  "poses": [
+    {
+      "id": "standing_side_by_side",
+      "name": "并肩站立",
+      "prompt": "Two people standing side by side, shoulders touching or close together, facing camera, natural arm positions",
+      "scene": "outdoor park or urban street",
+      "atmosphere": "friendly, casual, relaxed",
+      "attire": "coordinated casual outfits: matching colors or complementary styles, casual shirts, blouses, or comfortable clothing that looks natural together"
+    },
+    {
+      "id": "facing_each_other",
+      "name": "面对面",
+      "prompt": "Two people facing each other, looking at each other, engaged in conversation or shared moment",
+      "scene": "intimate indoor setting or scenic outdoor location",
+      "atmosphere": "intimate, romantic, friendly",
+      "attire": "coordinated outfits: complementary colors, soft fabrics, clothing suitable for intimate and friendly moments"
+    },
+    {
+      "id": "one_arm_around_shoulder",
+      "name": "揽肩拥抱",
+      "prompt": "One person's arm around other's shoulder, both smiling, relaxed and comfortable posture",
+      "scene": "casual setting like cafe, park bench, or street",
+      "atmosphere": "friendly, affectionate, relaxed",
+      "attire": "relaxed casual outfits: comfortable shirts, casual jackets, everyday wear that looks natural and cozy"
+    },
+    {
+      "id": "back_to_back",
+      "name": "背对背",
+      "prompt": "Two people standing back to back, both facing outward, playful and fun pose",
+      "scene": "open outdoor space or urban setting",
+      "atmosphere": "playful, fun, energetic",
+      "attire": "sporty or casual outfits: activewear, comfortable clothing suitable for energetic poses, playful styles"
+    },
+    {
+      "id": "seated_together",
+      "name": "并肩而坐",
+      "prompt": "Two people seated together on bench or chair, sitting close, natural relaxed posture",
+      "scene": "park bench, cafe seating, or comfortable furniture",
+      "atmosphere": "relaxed, comfortable, intimate",
+      "attire": "comfortable casual outfits: relaxed clothing, soft fabrics, cozy attire suitable for sitting comfortably"
+    },
+    {
+      "id": "walking_together",
+      "name": "携手同行",
+      "prompt": "Two people walking together, holding hands or walking side by side, natural movement",
+      "scene": "city street, beach, or walking path",
+      "atmosphere": "active, natural, everyday",
+      "attire": "casual everyday outfits: comfortable clothing for walking, casual shirts, pants or dresses suitable for outdoor activities"
+    },
+    {
+      "id": "holding_hands_facing_camera",
+      "name": "手牵手面向镜头",
+      "prompt": "Two people standing facing camera, holding hands together, romantic connection visible",
+      "scene": "sunset beach, scenic overlook, or romantic location",
+      "atmosphere": "romantic, loving, intimate",
+      "attire": "coordinated outfits: matching or complementary colors, elegant casual or semi-formal attire suitable for warm and intimate settings"
+    },
+    {
+      "id": "piggyback",
+      "name": "背背抱",
+      "prompt": "One person giving piggyback to other, both laughing, playful and fun pose",
+      "scene": "park, beach, or outdoor recreation area",
+      "atmosphere": "playful, fun, energetic",
+      "attire": "playful casual outfits: comfortable clothing suitable for piggyback ride, casual wear, sporty attire"
+    },
+    {
+      "id": "hugging_each_other",
+      "name": "拥抱姿势",
+      "prompt": "Two people hugging each other, genuine warm embrace, heartfelt moment",
+      "scene": "meaningful location, special place, or simple background",
+      "atmosphere": "loving, heartfelt, emotional",
+      "attire": "warm and comfortable outfits: soft clothing, cozy attire, clothing suitable for heartfelt embraces"
+    },
+    {
+      "id": "forehead_touch",
+      "name": "额头相抵",
+      "prompt": "Two people with foreheads touching or close together, intimate and loving moment",
+      "scene": "soft warm lighting, intimate setting",
+      "atmosphere": "intimate, romantic, loving",
+      "attire": "intimate outfits: soft and gentle clothing, elegant casual or warm attire suitable for intimate and loving moments"
+    },
+    {
+      "id": "sitting_on_ground",
+      "name": "坐地相拥",
+      "prompt": "Two people sitting on ground together, leaning against each other, casual and relaxed",
+      "scene": "grass, beach, or picnic setting",
+      "atmosphere": "relaxed, casual, intimate",
+      "attire": "relaxed picnic outfits: comfortable clothing suitable for sitting on ground, casual wear, soft fabrics"
+    },
+    {
+      "id": "dancing_together",
+      "name": "舞动时刻",
+      "prompt": "Two people dancing together or in dance pose, dynamic and energetic movement",
+      "scene": "dance floor, outdoor space, or dramatic lighting",
+      "atmosphere": "energetic, dynamic, joyful",
+      "attire": "dance-appropriate or stylish outfits: elegant evening wear, stylish casual clothing, outfits suitable for dancing"
+    }
+  ],
+  "backgrounds": [
+    {
+      "id": "urban_street",
+      "name": "城市街头",
+      "prompt": "modern city street, urban architecture, natural city lighting, contemporary setting"
+    },
+    {
+      "id": "park_nature",
+      "name": "公园自然",
+      "prompt": "beautiful park with trees and flowers, natural greenery, soft sunlight, peaceful atmosphere"
+    },
+    {
+      "id": "beach_sunset",
+      "name": "海滩日落",
+      "prompt": "sunset beach, golden hour lighting, ocean waves, romantic and beautiful scenery"
+    },
+    {
+      "id": "cafe_interior",
+      "name": "咖啡厅内",
+      "prompt": "cozy cafe interior, warm lighting, comfortable atmosphere, casual setting"
+    },
+    {
+      "id": "rooftop_view",
+      "name": "屋顶天台",
+      "prompt": "rooftop with city view, evening or golden hour lighting, urban and romantic atmosphere"
+    },
+    {
+      "id": "studio_simple",
+      "name": "摄影棚简约",
+      "prompt": "simple studio background, clean and minimalist, focus on subjects, professional lighting"
+    }
+  ]
+}

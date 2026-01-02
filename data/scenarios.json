@@ -1,0 +1,97 @@
+{
+  "scenarios": [
+    {
+      "id": "celebrity",
+      "name": "明星合影",
+      "description": "与电影明星拍照留念",
+      "input_type": "single_photo",
+      "required_photos": 1,
+      "max_photos": 1,
+      "data_file": "default_characters.json",
+      "prompt_templates": [
+        "A fan visiting movie set with {character}, {scene}. The fan is excited to meet the movie star, standing side-by-side for photo, natural happy expression.",
+        "Behind-the-scenes photo with {character} on film set, {scene}, authentic movie production atmosphere."
+      ],
+      "styles": [
+        {
+          "name": "电影片场",
+          "prompt": "on film set with crew members, cameras, lighting equipment, behind-the-scenes atmosphere"
+        },
+        {
+          "name": "首映礼",
+          "prompt": "at movie premiere, red carpet event, flash photography, glamorous atmosphere"
+        },
+        {
+          "name": "粉丝见面会",
+          "prompt": "at fan meet-and-greet event, friendly interaction, casual atmosphere"
+        }
+      ]
+    },
+    {
+      "id": "portrait",
+      "name": "个人写真",
+      "description": "专业个人肖像摄影",
+      "input_type": "single_photo",
+      "required_photos": 1,
+      "max_photos": 1,
+      "data_file": "portrait_styles.json",
+      "prompt_templates": [
+        "Professional portrait photography, {style}, {lighting}, {background}. High quality, detailed facial features, realistic skin texture.",
+        "Studio portrait session, {style}, professional lighting setup, {background}. 8k resolution, photorealistic."
+      ]
+    },
+    {
+      "id": "couple",
+      "name": "双人合影",
+      "description": "情侣或朋友合影",
+      "input_type": "multiple_photos",
+      "required_photos": 2,
+      "max_photos": 2,
+      "data_file": "couple_poses.json",
+      "prompt_templates": [
+        "Two people standing together, {pose}, {style}, {scene}. Natural interaction, genuine emotion.",
+        "Couple portrait, {pose}, {style}, {scene}. Intimate atmosphere, romantic lighting."
+      ],
+      "types": [
+        {
+          "name": "情侣合影",
+          "prompt": "romantic couple, intimate moment, loving atmosphere"
+        },
+        {
+          "name": "朋友合影",
+          "prompt": "best friends, friendly interaction, casual atmosphere"
+        }
+      ]
+    },
+    {
+      "id": "family",
+      "name": "全家合影",
+      "description": "家庭合照（3-6人）",
+      "input_type": "multiple_photos",
+      "required_photos": 1,
+      "max_photos": 6,
+      "data_file": "family_templates.json",
+      "prompt_templates": [
+        "Family portrait with exactly {count} people, {style}, {scene}. Happy family atmosphere, natural expressions.",
+        "Traditional family photo, {count} family members, {style}, {scene}. Warm and loving atmosphere."
+      ]
+    }
+  ],
+  "global_settings": {
+    "default_image_count": 1,
+    "max_image_count": 10,
+    "default_width": 2048,
+    "default_height": 2048,
+    "default_model": "doubao-seedream-4-5-251128",
+    "supported_sizes": [
+      "1024x1024",
+      "2048x2048",
+      "2304x1728",
+      "1728x2304",
+      "2560x1440",
+      "1440x2560",
+      "2496x1664",
+      "1664x2496"
+    ]
+  }
+}

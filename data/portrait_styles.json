@@ -1,0 +1,169 @@
+{
+  "styles": [
+    {
+      "id": "professional_headshot",
+      "name": "职业商务照",
+      "category": "商务",
+      "prompt": "Professional headshot, business portrait, clean solid background, studio lighting, confident expression, sharp focus, 85mm lens, shallow depth of field",
+      "attire": "formal business attire: suit jacket, collared shirt, or professional blouse, tailored fit",
+      "lighting": "soft studio lighting, even illumination",
+      "background": "neutral solid color background (white, gray, or navy blue)",
+      "mood": "professional, confident, trustworthy",
+      "pose": "standard headshot pose: subject facing camera, shoulders parallel to frame, slight angle to one side, chin slightly down, confident direct gaze at camera"
+    },
+    {
+      "id": "artistic_portrait",
+      "name": "艺术肖像",
+      "category": "艺术",
+      "prompt": "Artistic portrait, dramatic lighting, creative composition, fine art photography style, cinematic atmosphere, moody shadows, strong contrast",
+      "attire": "artistic and unconventional clothing: flowing fabrics, textured materials, creative fashion, artistic drapery",
+      "lighting": "dramatic chiaroscuro lighting, side lighting",
+      "background": "dark gradient or textured background",
+      "mood": "artistic, mysterious, sophisticated",
+      "pose": "artistic pose: three-quarter angle, head slightly tilted, expression conveying mystery and depth, dramatic positioning"
+    },
+    {
+      "id": "lifestyle_portrait",
+      "name": "生活写真",
+      "category": "生活",
+      "prompt": "Lifestyle portrait, natural lighting, candid moment, authentic atmosphere, everyday setting, relaxed expression",
+      "attire": "casual and comfortable clothing: simple t-shirt, casual blouse, jeans, or everyday wear that looks natural and relaxed",
+      "lighting": "natural window light, soft ambient lighting",
+      "background": "natural outdoor or cozy indoor environment",
+      "mood": "relaxed, authentic, approachable",
+      "pose": "natural casual pose: subject turned slightly to one side, relaxed shoulders, soft natural smile, comfortable body language"
+    },
+    {
+      "id": "vintage_portrait",
+      "name": "复古风格",
+      "category": "复古",
+      "prompt": "Vintage portrait, film photography aesthetic, classic Hollywood style, sepia or warm tone, timeless elegance",
+      "attire": "vintage style clothing: classic suit with wide lapels, elegant dress, retro fashion from 1940s-1960s, period-accurate attire",
+      "lighting": "soft diffuse lighting, film-like quality",
+      "background": "vintage interior or classic backdrop",
+      "mood": "nostalgic, elegant, timeless",
+      "pose": "classic vintage pose: upright posture, formal positioning, slight tilt of head, elegant hands placement near face or waist"
+    },
+    {
+      "id": "fashion_editorial",
+      "name": "时尚杂志",
+      "category": "时尚",
+      "prompt": "High fashion editorial portrait, magazine cover style, bold makeup, stylish outfit, dramatic lighting, contemporary fashion photography",
+      "attire": "high fashion and stylish outfit: designer clothing, trendy fashion, bold colors, fashion-forward style, runway-ready look",
+      "lighting": "studio fashion lighting, accent lights",
+      "background": "minimalist studio or urban fashion location",
+      "mood": "fashionable, bold, confident",
+      "pose": "fashion editorial pose: dynamic angle, exaggerated shoulder or hip positioning, confident gaze, striking posture"
+    },
+    {
+      "id": "classic_black_and_white",
+      "name": "黑白经典",
+      "category": "经典",
+      "prompt": "Classic black and white portrait, monochromatic photography, timeless elegance, strong contrast, fine details",
+      "attire": "classic and timeless attire: formal suit, elegant dress, simple and sophisticated clothing with clean lines",
+      "lighting": "classic portrait lighting, high contrast",
+      "background": "dark or neutral background",
+      "mood": "classic, elegant, sophisticated",
+      "pose": "classic portrait pose: symmetrical composition, centered position, straight posture, neutral expression, timeless dignity"
+    },
+    {
+      "id": "outdoor_natural",
+      "name": "户外自然",
+      "category": "自然",
+      "prompt": "Outdoor natural portrait, golden hour lighting, soft warm sunlight, nature backdrop, fresh and lively atmosphere",
+      "attire": "outdoor and nature-friendly clothing: casual shirt, light jacket, dress or comfortable outfit suitable for outdoor setting, natural colors",
+      "lighting": "golden hour sunlight, natural backlight",
+      "background": "park, beach, garden, or natural landscape",
+      "mood": "fresh, natural, vibrant",
+      "pose": "outdoor natural pose: body slightly turned toward light source, relaxed open posture, genuine smile, hands visible and natural"
+    },
+    {
+      "id": "minimalist_studio",
+      "name": "极简主义",
+      "category": "简约",
+      "prompt": "Minimalist studio portrait, clean and simple composition, neutral background, focus on subject's face and expression",
+      "attire": "minimalist and clean attire: simple solid-colored shirt, plain top, or clean clothing without patterns, neutral colors",
+      "lighting": "soft even lighting, simple setup",
+      "background": "plain white or light gray background",
+      "mood": "clean, modern, focused",
+      "pose": "minimalist pose: front-facing, symmetrical alignment, neutral expression, clean simple posture, no distractions"
+    },
+    {
+      "id": "glamour_portrait",
+      "name": "魅力写真",
+      "category": "魅力",
+      "prompt": "Glamour portrait, beauty photography, glowing skin, elegant styling, soft lighting, magazine beauty spread style",
+      "attire": "glamorous and elegant clothing: evening dress, stylish gown, elegant top, or sophisticated fashion that accentuates beauty",
+      "lighting": "soft glamour lighting, beauty dish",
+      "background": "elegant studio or luxury interior",
+      "mood": "beautiful, elegant, confident",
+      "pose": "glamour pose: soft flattering angle, chin slightly raised, gentle smile, elegant hands positioned near face or neck"
+    },
+    {
+      "id": "cinematic_portrait",
+      "name": "电影质感",
+      "category": "电影",
+      "prompt": "Cinematic portrait, movie still aesthetic, film grain texture, dramatic lighting, movie poster quality",
+      "attire": "cinematic costume attire: movie character costume, dramatic outfit, film costume, or dramatic clothing suitable for movie poster",
+      "lighting": "cinematic lighting, color grading effects",
+      "background": "moody atmospheric backdrop",
+      "mood": "cinematic, dramatic, artistic",
+      "pose": "cinematic pose: dramatic angle, strong character positioning, intense gaze, movie poster-style composition"
+    },
+    {
+      "id": "sports_action",
+      "name": "运动活力",
+      "category": "运动",
+      "prompt": "Sports action portrait, dynamic pose, energetic expression, athletic lifestyle, strong determination",
+      "attire": "athletic and sportswear: workout gear, sports jersey, athletic clothing, performance wear, or training outfit",
+      "lighting": "bright and dynamic lighting",
+      "background": "gym, field, or sports facility",
+      "mood": "energetic, determined, athletic",
+      "pose": "athletic pose: dynamic action positioning, muscles engaged, forward-leaning posture, determined competitive stance"
+    },
+    {
+      "id": "corporate_executive",
+      "name": "企业高管",
+      "category": "商务",
+      "prompt": "Corporate executive portrait, professional business attire, confident leadership presence, corporate environment, polished look",
+      "attire": "executive business attire: tailored suit, premium business jacket, professional dress shirt, or executive-level formal clothing",
+      "lighting": "professional studio lighting",
+      "background": "modern office or executive setting",
+      "mood": "professional, authoritative, trustworthy",
+      "pose": "executive pose: formal upright posture, direct eye contact with camera, commanding presence, shoulders back, confident stance"
+    },
+    {
+      "id": "creative_artist",
+      "name": "创意艺术",
+      "category": "创意",
+      "prompt": "Creative artistic portrait, unconventional composition, experimental lighting, artistic expression, unique visual style",
+      "attire": "creative and artistic clothing: unconventional fashion, artistic ensemble, creative costume, or unique designer piece",
+      "lighting": "experimental or creative lighting setup",
+      "background": "artistic or unconventional backdrop",
+      "mood": "creative, unique, expressive",
+      "pose": "creative artistic pose: unconventional body positioning, experimental angles, expressive gesture, unique asymmetrical composition"
+    },
+    {
+      "id": "warm_family",
+      "name": "温馨家庭",
+      "category": "家庭",
+      "prompt": "Warm family portrait, loving atmosphere, genuine smiles, comfortable home setting, soft warm lighting",
+      "attire": "warm and comfortable family attire: casual and cozy clothing, comfortable sweater, or relaxed home wear",
+      "lighting": "warm soft lighting",
+      "background": "cozy home interior",
+      "mood": "warm, loving, family-oriented",
+      "pose": "warm family pose: soft welcoming posture, gentle smile, relaxed shoulders, approachable body language"
+    },
+    {
+      "id": "modern_stylish",
+      "name": "现代时尚",
+      "category": "时尚",
+      "prompt": "Modern stylish portrait, contemporary fashion, trendy aesthetic, modern photography style, sharp and clean",
+      "attire": "modern and stylish attire: trendy outfit, contemporary fashion, modern style clothing, fashionable casual wear",
+      "lighting": "modern studio lighting",
+      "background": "modern urban or minimalist background",
+      "mood": "modern, trendy, stylish",
+      "pose": "modern fashion pose: confident stance, slight attitude, contemporary body language, fashionable positioning, trend-aware posture"
+    }
+  ]
+}

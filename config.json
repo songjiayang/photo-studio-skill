@@ -1,0 +1,27 @@
+{
+  "api": {
+    "image_generation_url": "https://ark.cn-beijing.volces.com/api/v3/images/generations"
+  },
+  "paths": {
+    "temp_dir": "temp",
+    "output_dir": "output",
+    "logs_dir": "logs",
+    "data_dir": "data"
+  },
+  "generation": {
+    "default_image_count": 1,
+    "image_width": 1440,
+    "image_height": 2560,
+    "image_model": "doubao-seedream-4-5-251128"
+  },
+  "scenarios": {
+    "config_file": "scenarios.json",
+    "default_scenario": "celebrity"
+  },
+  "mock": {
+    "enabled": false,
+    "use_sample_images": true,
+    "sample_images_dir": "mock_samples"
+  },
+  "characters": []
+}

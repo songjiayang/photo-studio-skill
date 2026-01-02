@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Iron Man",
+    "prompt": "Tony Stark as Iron Man in character on Avengers film set, taking break from shooting, high-tech suit",
+    "scene": "movie film set with crew members, cameras, lighting equipment, behind-the-scenes atmosphere"
+  },
+  {
+    "name": "Wonder Woman",
+    "prompt": "Diana Prince as Wonder Woman on Justice League film set, between takes, golden armor",
+    "scene": "epic film set with director's chairs, camera cranes, production crew working"
+  },
+  {
+    "name": "Spider-Man",
+    "prompt": "Peter Parker as Spider-Man on Marvel film set, friendly neighborhood hero pose",
+    "scene": "urban film set with green screens, stunt coordinators, special effects equipment"
+  },
+  {
+    "name": "Harry Potter",
+    "prompt": "Harry Potter on Hogwarts film set, holding wand, magical atmosphere between scenes",
+    "scene": "fantasy film set with magical props, special effects team, cinematic lighting"
+  },
+  {
+    "name": "Neo (Matrix)",
+    "prompt": "Neo from The Matrix on film set, wearing sunglasses and black coat, between bullet time shots",
+    "scene": "futuristic film set with green code rain screens, wire rigging, special effects"
+  },
+  {
+    "name": "Star-Lord (Guardians of the Galaxy)",
+    "prompt": "Peter Quill as Star-Lord on Guardians of the Galaxy film set, wearing leather jacket and helmet, holding blasters",
+    "scene": "space film set with alien props, starship models, cosmic background visuals"
+  },
+  {
+    "name": "Gamora (Guardians of the Galaxy)",
+    "prompt": "Gamora on Guardians of the Galaxy film set, green-skinned assassin, holding sword, fierce expression",
+    "scene": "alien planet film set with exotic flora, spaceship wreckage, otherworldly lighting"
+  },
+  {
+    "name": "Drax the Destroyer (Guardians of the Galaxy)",
+    "prompt": "Drax the Destroyer on Guardians of the Galaxy film set, heavily muscled, covered in tattoos, holding knives",
+    "scene": "prison ship film set with metal corridors, alien prisoners, sci-fi security systems"
+  },
+  {
+    "name": "Rocket Raccoon (Guardians of the Galaxy)",
+    "prompt": "Rocket Raccoon on Guardians of the Galaxy film set, genetically engineered raccoon, holding oversized gun, annoyed expression",
+    "scene": "spaceship cockpit film set with control panels, navigation screens, futuristic technology"
+  },
+  {
+    "name": "Groot (Guardians of the Galaxy)",
+    "prompt": "Groot on Guardians of the Galaxy film set, sentient tree-like creature, peaceful expression, wooden texture",
+    "scene": "alien forest film set with bioluminescent plants, floating rocks, mystical atmosphere"
+  },
+  {
+    "name": "Captain America",
+    "prompt": "Steve Rogers as Captain America on Avengers film set, holding iconic shield, patriotic suit",
+    "scene": "WWII-era film set with period costumes, military vehicles, historical props"
+  },
+  {
+    "name": "Thor",
+    "prompt": "Thor on Marvel film set, holding Mjolnir hammer, flowing red cape, Asgardian armor",
+    "scene": "Asgardian palace film set with golden architecture, mystical runes, divine lighting"
+  },
+  {
+    "name": "Black Widow",
+    "prompt": "Natasha Romanoff as Black Widow on Avengers film set, black tactical suit, martial arts pose",
+    "scene": "spy headquarters film set with high-tech computers, weapon displays, surveillance monitors"
+  },
+  {
+    "name": "Hulk",
+    "prompt": "Bruce Banner as Hulk on Avengers film set, massive green creature, roaring expression, torn purple pants",
+    "scene": "laboratory film set with broken equipment, scientific instruments, emergency lighting"
+  },
+  {
+    "name": "Black Panther",
+    "prompt": "T'Challa as Black Panther on Marvel film set, vibranium suit, cat-like helmet, regal pose",
+    "scene": "Wakandan throne room film set with African-inspired decor, advanced technology, tribal patterns"
+  },
+  {
+    "name": "Doctor Strange",
+    "prompt": "Stephen Strange as Doctor Strange on Marvel film set, Cloak of Levitation, magical gestures, mystical aura",
+    "scene": "Sanctum Sanctorum film set with ancient artifacts, floating books, magical portals"
+  },
+  {
+    "name": "Captain Marvel",
+    "prompt": "Carol Danvers as Captain Marvel on Marvel film set, glowing with cosmic energy, flight pose, Kree suit",
+    "scene": "space station film set with starfield views, alien technology, zero-gravity effects"
+  },
+  {
+    "name": "Thanos",
+    "prompt": "Thanos on Avengers film set, purple-skinned titan, wearing golden armor, Infinity Gauntlet on hand",
+    "scene": "Titan planet film set with alien ruins, desolate landscape, cosmic destruction"
+  }
+]
