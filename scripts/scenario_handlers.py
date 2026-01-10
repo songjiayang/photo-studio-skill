@@ -289,13 +289,22 @@ def handle_template_based_common(args, config, image_gen, scenario_id: str,
 
     for field in template_fields:
         field_name = field['name']
+        
+        value = None
+        
         if hasattr(args, 'template_fields') and field_name in args.template_fields:
             value = args.template_fields[field_name]
+        elif hasattr(args, field_name):
+            value = getattr(args, field_name)
+        
+        if value is not None:
             if field['type'] == 'multiselect' and isinstance(value, str):
                 value = value.replace(',', ', ')
             field_values[field_name] = value
         elif field.get('default'):
             field_values[field_name] = field['default']
+        elif not field.get('required', False):
+            field_values[field_name] = ""
 
     if scenario_id == 'edit':
         result = image_gen.generate_edit_images(photo_path, selected_template, field_values)

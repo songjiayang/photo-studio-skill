@@ -50,7 +50,14 @@ Merge person photo with scenery photo for natural scene composition.
 | Parameter | Type | Options | Default |
 |-----------|-------|----------|---------|
 | `--mood` | select | 宁静致远, 活力四射, 浪漫温馨, 神秘奇幻, 怀旧温暖 | 宁静致远 |
+| `--clothing` | text | Clothing description (optional) | None |
 | `--composition` | text | Composition suggestion (optional) | None |
+
+**Clothing Examples:**
+- "白色运动外套"
+- "连衣裙"
+- "西装"
+- "休闲T恤"
 
 **Composition Examples:**
 - "人物位于画面左侧三分之一处"
@@ -62,6 +69,7 @@ Merge person photo with scenery photo for natural scene composition.
 python scripts/main.py generate --photos "me.jpg,scenery.jpg" --scenario fusion \
     --template person-scenery-fusion \
     --mood "宁静致远" \
+    --clothing "白色运动外套" \
     --composition "人物位于画面左侧三分之一处" \
     --non-interactive
 ```
@@ -155,6 +163,7 @@ python scripts/main.py generate --photos "me.jpg,clothing.jpg" --scenario fusion
 python scripts/main.py generate --photos "me.jpg,scenery.jpg" --scenario fusion \
     --template person-scenery-fusion \
     --mood "宁静致远" \
+    --clothing "白色运动外套" \
     --composition "人物位于画面左侧三分之一处" \
     --non-interactive
 
@@ -197,7 +206,8 @@ python scripts/main.py generate --photos "p1.jpg,p2.jpg,p3.jpg" --scenario fusio
 1. **Person photo clarity**: Clear facial features and posture
 2. **Scenery photo quality**: High-resolution scenery with clear details
 3. **Appropriate mood**: Choose mood that matches scenery type
-4. **Consider composition**: Specify positioning for better results
+4. **Clothing matching**: Optional clothing parameter to change outfit
+5. **Consider composition**: Specify positioning for better results
 
 ### Brand Design
 1. **Clear LOGO**: High-resolution LOGO with visible details
@@ -246,6 +256,7 @@ python scripts/main.py generate --photos "p1.jpg,p2.jpg,p3.jpg" --scenario fusio
 - **Person looks out of place**: Adjust mood and composition settings
 - **Lighting mismatch**: Choose scenery with compatible lighting
 - **Scale issues**: Ensure person and scenery have compatible proportions
+- **Clothing doesn't match**: Adjust clothing parameter to match scenery style
 
 ### Brand Design Issues
 - **Unclear design**: Provide clearer, higher-resolution LOGO

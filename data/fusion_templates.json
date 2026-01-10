@@ -25,7 +25,7 @@
       "description": "将人物与风景融合，生成自然场景照",
       "required_photos": 2,
       "max_photos": 2,
-      "prompt_structure": "将人物照片与风景照片融合。\n人物：从第一张参考图提取面部特征、性别、年龄和体态。\n风景：从第二张参考图提取场景、色调、氛围和构图。\n情绪：{mood}。\n{composition}\nIMPORTANT: 人物与风景的光影要自然融合，色调要协调。\n人物在风景中的位置要合理，比例要恰当。\nHigh quality, detailed, realistic, seamless composition.",
+      "prompt_structure": "将人物照片与风景照片融合。\n人物：从第一张参考图提取面部特征、性别、年龄和体态。\n风景：从第二张参考图提取场景、色调、氛围和构图。\n情绪：{mood}。\n服装：{clothing}\n构图：{composition}\nIMPORTANT: 人物与风景的光影要自然融合，色调要协调。\n人物在风景中的位置要合理，比例要恰当。\n服装要与风景风格协调，光影要自然。\nHigh quality, detailed, realistic, seamless composition.",
       "fields": [
         {
           "name": "mood",
@@ -33,6 +33,13 @@
           "type": "select",
           "options": ["宁静致远", "活力四射", "浪漫温馨", "神秘奇幻", "怀旧温暖"],
           "default": "宁静致远"
+        },
+        {
+          "name": "clothing",
+          "label": "服装描述（可选）",
+          "type": "text",
+          "placeholder": "白色运动外套、连衣裙、西装...",
+          "required": false
         },
         {
           "name": "composition",
