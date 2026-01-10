@@ -1197,8 +1197,13 @@ class InteractionManager:
 
         inputs = {}
 
-        photos = self.collect_photos_for_scenario(scenario)
-        inputs["user_photo"] = photos[0] if photos else None
+        required_photos = scenario.get("required_photos", 0)
+        if required_photos > 0:
+            photos = self.collect_photos_for_scenario(scenario)
+            inputs["user_photo"] = photos[0] if photos else None
+        else:
+            print("✓ Photo is optional. You can generate poster without reference image.")
+            inputs["user_photo"] = None
 
         templates = self.config.get_scenario_data(scenario["id"])
         if not templates:

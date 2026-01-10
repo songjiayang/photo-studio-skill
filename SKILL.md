@@ -116,7 +116,8 @@ python scripts/main.py cleanup
 pip install -r requirements.txt
 
 # Set API key (required for operation)
-export ARK_API_KEY="your_api_key_here"
+# API key environment variable name: ARK_API_KEY
+# API will return error if key is not properly configured
 
 # Mock mode for testing without API (optional)
 export MOCK_API=true
@@ -197,7 +198,7 @@ Load these reference files when working with specific features:
 
 **Image generation fails:**
 - Check internet connection
-- Verify `ARK_API_KEY` is set correctly
+- Verify API key is properly configured (see Environment Setup)
 - Ensure photos are clear and well-lit (≥1024×1024 recommended)
 - Check `logs/` directory for detailed errors
 

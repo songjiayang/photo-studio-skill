@@ -7,7 +7,7 @@
       "description": "保持姿势不变，只更换服装",
       "required_photos": 1,
       "max_photos": 1,
-      "prompt_structure": "保持{原照片的}姿势、体态、面部特征不变。\n更换服装为：{clothing}。\n服装风格：{style}。\nIMPORTANT: Use ONLY facial features from reference photo - ignore all clothing, background, and original pose.\nGenerate completely new body position and clothing as described.\nHigh quality, detailed, realistic.",
+      "prompt_structure": "保持{原照片的}姿势、体态、面部特征不变。\n更换服装为：{clothing}。\n服装风格：{style}。\nIMPORTANT: ONLY change the clothing - keep original pose, body position, facial features, and background exactly the same as reference photo.\nHigh quality, detailed, realistic.",
       "fields": [
         {
           "name": "clothing",
@@ -106,7 +106,7 @@
       "description": "保持人物特征，优化人像效果",
       "required_photos": 1,
       "max_photos": 1,
-      "prompt_structure": "保持{原照片的}人物面部特征和表情不变。\n优化效果：{enhancements}。\nIMPORTANT: 自然优化，不改变识别性。\nHigh quality, enhanced portrait, professional photography.",
+      "prompt_structure": "保持{原照片的}人物面部特征、表情、身体姿势和背景完全不变。\n优化效果：{enhancements}。\nIMPORTANT: ONLY apply enhancements to skin quality, lighting, and details - keep pose, facial features, expression, and background exactly the same as reference photo.\nHigh quality, enhanced portrait, professional photography.",
       "fields": [
         {
           "name": "enhancements",

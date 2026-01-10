@@ -8,12 +8,16 @@ A powerful AI photo generation skill for Claude Code/Agent Skills ecosystem that
 
 ## Features
 
- - **Multiple Photo Scenarios**: Support for 5 generation types
-   - 明星合影 (Celebrity Photos) - Take photos with movie characters
-   - 个人写真 (Personal Portraits) - Professional headshots with standard poses (15+ styles)
-   - 双人合影 (Couple Photos) - Romantic or friendly couple portraits with gender detection (12 poses, 6 backgrounds)
-   - 全家合影 (Family Photos) - Professional family group photos with person count control (3-6 people, 8 templates, 6 backgrounds)
-   - 自由模式 (Free Mode) - Custom prompt generation with 1-14 reference photos
+ - **Multiple Photo Scenarios**: Support for 9 generation types
+    - 明星合影 (Celebrity Photos) - Take photos with movie characters
+    - 个人写真 (Personal Portraits) - Professional headshots with standard poses (15+ styles)
+    - 双人合影 (Couple Photos) - Romantic or friendly couple portraits with gender detection (12 poses, 6 backgrounds)
+    - 全家合影 (Family Photos) - Professional family group photos with person count control (3-6 people, 8 templates, 6 backgrounds)
+    - 图像编辑 (Image Edit) - Edit images (clothing, material, background, style, enhance)
+    - 图像融合 (Image Fusion) - Merge multiple photos (outfit, person-scenery, brand, composite)
+    - 系列创作 (Series Creation) - Create related image series (seasons, brand kit, character states, story)
+    - 海报设计 (Poster Design) - Design posters (movie, event, product)
+    - 自由模式 (Free Mode) - Custom prompt generation with 1-14 reference photos
 - **AI Image Generation**: Use ByteDance's Seedream 4.5 for high-quality image-to-image transformations
 - **Multi-Photo Support**: Process up to 6 reference photos for group scenarios with unique preprocessing
 - **Non-interactive Mode**: Full automation for agent integration via CLI
@@ -79,7 +83,8 @@ After installation, the skill will be available in Claude Code as `photo-studio-
 
 ```bash
 # Set API key for image generation
-export ARK_API_KEY="your_ark_api_key_here"
+# API key environment variable name: ARK_API_KEY
+# API will return error if key is not properly configured
 ```
 
 ### Run the Skill
@@ -354,7 +359,7 @@ Recommended tools for agent skills:
 
 ### Environment Variables
 
-- `ARK_API_KEY`: ByteDance ARK API key for image generation
+- `ARK_API_KEY`: ByteDance ARK API key for image generation (required, API will error if not set)
 
 ### Configuration File (`config.json`)
 
@@ -420,7 +425,8 @@ Detailed API documentation is available in `docs/api/`.
 
 ```bash
 # Configure API credentials before running
-export ARK_API_KEY="your_ark_api_key_here"
+# Set environment variable: ARK_API_KEY
+# API will return error if key is not properly configured
 ```
 
 ### Image Generation Fails

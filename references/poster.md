@@ -18,7 +18,7 @@ Design professional posters for movies, events, or products using 3 poster templ
 
 Create cinematic movie promotional poster.
 
-**Required Photos:** 1 (character, scene, or element)
+**Required Photos:** 0-1 (optional - character, scene, or element)
 
 **Fields:**
 | Parameter | Type | Options | Default |
@@ -80,36 +80,37 @@ Create promotional event poster.
 | Parameter | Type | Options | Default |
 |-----------|-------|----------|---------|
 | `--event-name` | text | Event name | Required |
-| `--event-type` | select | 音乐节, 展览, 会议, 聚会, 演出, 讲座, 比赛, 派对 | 音乐节 |
-| `--style` | select | 潮流时尚, 商务专业, 艺术文艺, 科技感, 复古风, 极简现代 | 潮流时尚 |
-| `--date` | text | Event date | Optional |
-| `--location` | text | Event location | Optional |
-| `--mood` | select | 热闹欢快, 专业正式, 温馨轻松, 神秘奇幻, 激情澎湃 | 热闹欢快 |
+| `--event-type` | select | 音乐节, 演唱会, 会议, 展览, 比赛, 市集, 讲座, 派对 | 音乐节 |
+| `--style` | select | 潮流时尚, 简约现代, 复古怀旧, 科技未来, 艺术创意, 专业商务 | 潮流时尚 |
+| `--date` | text | Event date | Required |
+| `--location` | text | Event location | Required |
+| `--mood` | select | 热闹欢快, 神秘酷炫, 温馨亲切, 专业正式, 活力四射, 文艺清新 | 热闹欢快 |
 
 **Event Type Examples:**
 - 音乐节 - Music festival
-- 展览 - Exhibition
+- 演唱会 - Concert
 - 会议 - Conference
-- 聚会 - Gathering
-- 演出 - Performance
-- 讲座 - Lecture
+- 展览 - Exhibition
 - 比赛 - Competition
+- 市集 - Market/Fair
+- 讲座 - Lecture
 - 派对 - Party
 
 **Style Examples:**
 - 潮流时尚 - Trendy, fashionable
-- 商务专业 - Business, professional
-- 艺术文艺 - Artistic, cultural
-- 科技感 - Tech-oriented
-- 复古风 - Retro style
-- 极简现代 - Minimalist, modern
+- 简约现代 - Minimalist, modern
+- 复古怀旧 - Retro, nostalgic
+- 科技未来 - Futuristic
+- 艺术创意 - Artistic, creative
+- 专业商务 - Professional, business
 
 **Mood Examples:**
 - 热闹欢快 - Lively, cheerful
+- 神秘酷炫 - Mysterious, cool
+- 温馨亲切 - Warm, friendly
 - 专业正式 - Professional, formal
-- 温馨轻松 - Warm, relaxed
-- 神秘奇幻 - Mysterious, fantasy
-- 激情澎湃 - Passionate, energetic
+- 活力四射 - Energetic, dynamic
+- 文艺清新 - Artistic, fresh
 
 **Example:**
 ```bash
@@ -136,9 +137,9 @@ Create product marketing poster.
 | Parameter | Type | Options | Default |
 |-----------|-------|----------|---------|
 | `--product-name` | text | Product name | Required |
-| `--product-type` | select | 科技产品, 服装鞋帽, 食品饮料, 家居用品, 化妆品, 书籍文具 | 科技产品 |
-| `--style` | select | 科技感, 时尚潮流, 简约高级, 复古怀旧, 温馨生活, 商务专业 | 科技感 |
-| `--mood` | select | 专业高端, 亲民实惠, 创新前卫, 温馨舒适, 时尚潮流 | 专业高端 |
+| `--product-type` | select | 科技产品, 食品饮料, 服装时尚, 美妆护肤, 家居用品, 运动健身, 图书文创 | 科技产品 |
+| `--style` | select | 科技感, 时尚潮流, 简约高级, 温馨亲切, 运动活力, 自然清新 | 科技感 |
+| `--mood` | select | 专业高端, 亲切温暖, 创新前沿, 活力四射, 优雅精致, 科技未来 | 专业高端 |
 | `--features` | text | Comma-separated product features | Optional |
 | `--additional-info` | text | Additional text (e.g., price, tagline) | Optional |
 

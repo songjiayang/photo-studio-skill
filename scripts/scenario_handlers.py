@@ -251,10 +251,11 @@ def handle_series_scenario(args, config, image_gen) -> Tuple[bool, List[str]]:
 def handle_poster_scenario(args, config, image_gen) -> Tuple[bool, List[str]]:
     """Handle poster scenario"""
     photo_path = getattr(args, 'photo', None)
-    valid, error = validate_photo_path(photo_path)
-    if not valid:
-        print(error)
-        return False, []
+    if photo_path:
+        valid, error = validate_photo_path(photo_path)
+        if not valid:
+            print(error)
+            return False, []
 
     return handle_template_based_common(args, config, image_gen, 'poster', photo_path, None)
 

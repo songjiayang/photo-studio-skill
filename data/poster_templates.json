@@ -5,10 +5,10 @@
       "name": "电影海报",
       "category": "海报",
       "description": "电影宣传海报设计",
-      "required_photos": 1,
+      "required_photos": 0,
       "max_photos": 1,
       "default_count": 1,
-      "prompt_structure": "专业电影海报设计。\n\n电影标题：{title}。\n电影类型：{genre}。\n海报风格：{style}。\n\n{additional_info}\n\nIMPORTANT:\n- 电影标题要醒目突出，使用大号字体，位于海报上方或中央。\n- 主视觉（人物/场景）要占据海报主要空间，具有视觉冲击力。\n- 海报风格要符合{genre}类型的特征。\n- 色彩要统一，营造{mood}的氛围。\n- 底部或边缘可以添加演员名单、上映日期、宣传标语等辅助信息。\n- 整体构图要有层次感，主次分明。\n- 文字清晰可读，字体选择要符合电影风格。\n- 专业海报设计，商业级别质量。\nHigh quality, professional movie poster design, {style} style, striking visual impact, 8k resolution, cinematic poster.",
+      "prompt_structure": "专业电影海报设计。\n\n电影标题：{title}。\n电影类型：{genre}。\n海报风格：{style}。\n\n{additional_info}\n\nIMPORTANT:\n- 电影标题要醒目突出，使用大号字体，位于海报上方或中央。\n- 主视觉（人物/场景）要占据海报主要空间，具有视觉冲击力。\n- 海报风格要符合{genre}类型的特征。\n- 色彩要统一，营造{mood}的氛围。\n- 底部或边缘可以添加演员名单、上映日期、宣传标语等辅助信息。\n- 整体构图要有层次感，主次分明。\n- 文字清晰可读，字体选择要符合电影风格。\n- 专业海报设计，商业级别质量。\n- {keep_content_instruction}\nHigh quality, professional movie poster design, {style} style, striking visual impact, 8k resolution, cinematic poster.",
       "fields": [
         {
           "name": "title",
@@ -52,10 +52,10 @@
       "name": "活动海报",
       "category": "海报",
       "description": "活动宣传海报设计",
-      "required_photos": 1,
+      "required_photos": 0,
       "max_photos": 1,
       "default_count": 1,
-      "prompt_structure": "专业活动海报设计。\n\n活动名称：{event_name}。\n活动类型：{event_type}。\n海报风格：{style}。\n活动时间：{date}。\n活动地点：{location}。\n\n{additional_info}\n\nIMPORTANT:\n- 活动名称要醒目突出，使用大号字体，位于海报上方或中央。\n- 主视觉要体现活动特色和氛围。\n- 海报风格要符合{event_type}类型的特征。\n- 色彩要统一，营造{mood}的氛围。\n- 活动时间、地点等重要信息要清晰可读。\n- 可以添加主办方、联系方式、报名方式等辅助信息。\n- 整体构图要有层次感，主次分明。\n- 文字清晰可读，字体选择要符合活动风格。\n- 专业海报设计，商业级别质量。\nHigh quality, professional event poster design, {style} style, clear information hierarchy, 8k resolution, promotional poster.",
+      "prompt_structure": "专业活动海报设计。\n\n活动名称：{event_name}。\n活动类型：{event_type}。\n海报风格：{style}。\n活动时间：{date}。\n活动地点：{location}。\n\n{additional_info}\n\nIMPORTANT:\n- 活动名称要醒目突出，使用大号字体，位于海报上方或中央。\n- 主视觉要体现活动特色和氛围。\n- 海报风格要符合{event_type}类型的特征。\n- 色彩要统一，营造{mood}的氛围。\n- 活动时间、地点等重要信息要清晰可读。\n- 可以添加主办方、联系方式、报名方式等辅助信息。\n- 整体构图要有层次感，主次分明。\n- 文字清晰可读，字体选择要符合活动风格。\n- 专业海报设计，商业级别质量。\n- {keep_content_instruction}\nHigh quality, professional event poster design, {style} style, clear information hierarchy, 8k resolution, promotional poster.",
       "fields": [
         {
           "name": "event_name",
@@ -113,10 +113,10 @@
       "name": "产品海报",
       "category": "海报",
       "description": "产品展示海报设计",
-      "required_photos": 1,
+      "required_photos": 0,
       "max_photos": 1,
       "default_count": 1,
-      "prompt_structure": "专业产品海报设计。\n\n产品名称：{product_name}。\n产品类型：{product_type}。\n海报风格：{style}。\n\n{features}\n\n{additional_info}\n\nIMPORTANT:\n- 产品名称要醒目突出，使用大号字体。\n- 产品主视觉要占据海报主要空间，展示产品最佳角度。\n- 海报风格要符合产品定位和{product_type}类型。\n- 色彩要统一，营造{mood}的品牌氛围。\n- 产品特点要清晰可读，突出卖点。\n- 可以添加品牌标语、宣传语、价格信息等辅助信息。\n- 整体构图要有层次感，主次分明。\n- 文字清晰可读，字体选择要符合产品风格。\n- 专业海报设计，商业级别质量。\nHigh quality, professional product poster design, {style} style, product-focused, 8k resolution, marketing poster.",
+      "prompt_structure": "专业产品海报设计。\n\n产品名称：{product_name}。\n产品类型：{product_type}。\n海报风格：{style}。\n\n{features}\n\n{additional_info}\n\nIMPORTANT:\n- 产品名称要醒目突出，使用大号字体。\n- 产品主视觉要占据海报主要空间，展示产品最佳角度。\n- 海报风格要符合产品定位和{product_type}类型。\n- 色彩要统一，营造{mood}的品牌氛围。\n- 产品特点要清晰可读，突出卖点。\n- 可以添加品牌标语、宣传语、价格信息等辅助信息。\n- 整体构图要有层次感，主次分明。\n- 文字清晰可读，字体选择要符合产品风格。\n- 专业海报设计，商业级别质量。\n- {keep_content_instruction}\nHigh quality, professional product poster design, {style} style, product-focused, 8k resolution, marketing poster.",
       "fields": [
         {
           "name": "product_name",

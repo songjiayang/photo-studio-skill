@@ -653,6 +653,31 @@ class ImageGenerator:
 
         return self._execute_api_request(payload, filename)
 
+    def _generate_without_photo(self, prompt: str, filename: str) -> Optional[str]:
+        """Helper method to generate image without reference photo"""
+        if self.mock_mode:
+            return self._generate_mock_response(filename)
+
+        gen_config = self.config.config["generation"]
+        width = gen_config.get("image_width", 2048)
+        height = gen_config.get("image_height", 2048)
+        size_str = f"{width}x{height}"
+
+        payload = {
+            "model": gen_config.get("image_model", "doubao-seedream-4-5-251128"),
+            "prompt": prompt,
+            "size": size_str,
+            "negative_prompt": (
+                "blurry, distorted faces, unnatural pose, bad proportions, "
+                "watermark, text, low quality, artifacts, deformed hands, extra fingers"
+            ),
+            "sequential_image_generation": "disabled",
+            "response_format": "b64_json",
+            "watermark": False
+        }
+
+        return self._execute_api_request(payload, filename)
+
     def _execute_api_request(self, payload: Dict, filename: str) -> Optional[str]:
         """Execute API request and handle response"""
         if not self.api_key:
@@ -1218,12 +1243,12 @@ class ImageGenerator:
             print("\n❌ Series generation failed")
             return []
 
-    def generate_poster_images(self, photo: str, template: Dict, field_values: Dict) -> List[str]:
+    def generate_poster_images(self, photo: Optional[str], template: Dict, field_values: Dict) -> List[str]:
         """
         Generate poster images
 
         Args:
-            photo: Path to reference photo
+            photo: Path to reference photo (optional)
             template: Template dictionary with prompt structure
             field_values: Dictionary of field values from user input
 
@@ -1233,8 +1258,6 @@ class ImageGenerator:
         print("\n" + "=" * 60)
         print("📄 Poster Generation Started")
         print("=" * 60)
-
-        processed_photo = self.preprocess_user_photo(photo)
 
         prompt_structure = template.get("prompt_structure", "")
         field_values_with_default = {"原照片的": "参考"}
@@ -1248,17 +1271,33 @@ class ImageGenerator:
             else:
                 field_values_with_default[field_name] = field_values[field_name]
 
+        # Add content preservation instruction when photo is provided
+        if photo:
+            field_values_with_default["keep_content_instruction"] = (
+                "保持原图的核心内容不变，包括人物、商品、角色等主要目标特征，只改变海报的整体风格、布局和设计。"
+            )
+        else:
+            field_values_with_default["keep_content_instruction"] = ""
+
         full_prompt = prompt_structure.format(**field_values_with_default)
 
         print(f"  Template: {template['name']}")
+        print(f"  Reference photo: {'Yes' if photo else 'No (text-only generation)'}")
         print(f"  Prompt preview: {full_prompt[:150]}...")
 
-        image_path = self._generate_with_single_photo(
-            processed_photo,
-            full_prompt,
-            f"poster_{template['id']}_{int(time.time())}",
-            0
-        )
+        if photo:
+            processed_photo = self.preprocess_user_photo(photo)
+            image_path = self._generate_with_single_photo(
+                processed_photo,
+                full_prompt,
+                f"poster_{template['id']}_{int(time.time())}",
+                0
+            )
+        else:
+            image_path = self._generate_without_photo(
+                full_prompt,
+                f"poster_{template['id']}_{int(time.time())}"
+            )
 
         if image_path:
             generated_images = [image_path]
